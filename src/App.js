@@ -1,5 +1,6 @@
 import './App.css';
 import Book from './components/Book';
+import BookList from './pages/BookList';
 import FormBook from './pages/FormBook';
 
 function App() {
@@ -28,11 +29,12 @@ function App() {
 
   return (
     <>
-    <FormBook/>
+    <BookList/>
+    {/* <FormBook/>
       <h1>Livros</h1>
       {livros.map(livro => (
         <Book livro={livro.nome} key={livro.id} />
-      ))}
+      ))} */}
     </>
   );
 }
